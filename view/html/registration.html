@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FrontEnders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="registration.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button type="button"
+                                class="btn btn-outline-danger" id="btnHeader">Login</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bannerCadastro d-flex justify-content-center align-items-center flex-column">
+        <div class="cadastroInfo text-center">
+            <h1 class="mb-4">Faça seu cadastro!</h1>
+            <p class="lead">E comece já a desenvolver seus projetos com muito mais facilidade e agilidade!</p>
+            <p>Confira nossos planos e assine a melhor opção para você. </p>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="text-center mt-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Cadastro
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modalFull" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Dados</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="formRegistro">
+                        <div class="mainForm gap-4">
+                            <div class="formDados">
+                                <div class="d-flex gap-2">
+                                    <div class="w-50">
+                                        <input type="text" name="nome" id="inputNome" class="form-control"
+                                            placeholder="Nome">
+                                    </div>
+                                    <div class="w-50">
+                                        <input type="text" name="sobrenome" id="inputSobrenome" class="form-control"
+                                            placeholder="Sobrenome">
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" class="form-control" id="inputEmail4"
+                                        placeholder="Email">
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <div class="w-50">
+                                        <input type="password" name="senha" class="form-control" id="inputPassword4"
+                                            placeholder="Senha">
+                                    </div>
+                                    <div class="w-50">
+                                        <input type="password" name="confirmarSenha" class="form-control"
+                                            id="inputConfirmPassword" placeholder="Confirmação de Senha">
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 gap-2">
+                                    <input type="" class="form-control" id="RG" placeholder="Nº de RG">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Telefone">
+                                </div>
+                            </div>
+                            <div class="formDados">
+                                <div class="formCep w-100 d-flex gap-2">
+                                    <div class="d-flex flex-column w-50">
+                                        <input type="" class="form-control" id="inputCEP" placeholder="CEP"
+                                            maxlength="8">
+                                    </div>
+                                    <input type="text" id="inputEstado" class="form-control w-50" placeholder="Estado">
+                                </div>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+                                <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
+
+                                <div class="d-flex gap-1">
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Rua dos Programadores">
+                                    <input type="number" class="form-control addressNumber" placeholder="Nº">
+                                    <input type="text" class="form-control w-25" placeholder="Complemento">
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="submit" name="btn-form" class="btnForm btn btn-primary mt-3 mb-3">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../controller/bibliotecas/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="../../controller/bibliotecas/jquery.validate.min.js"></script>
+    <script src="../../controller/bibliotecas/messages_pt_BR.js"></script>
+    <script src="../../controller/bibliotecas/additional-methods.min.js"></script>
+    <script src="../../controller/bibliotecas/jquery.mask.min.js"></script>
+    <script src="../../controller/cadastro_validacao.js"></script>
+    <script src="../../controller/cadastro_endereco.js"></script>
+    <script src="../../controller/bibliotecas/sweetAlert2.js"></script>
+    <script src="../../controller/script.js"></script>
+</body>
+
+</html>

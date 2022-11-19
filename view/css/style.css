@@ -1,0 +1,7 @@
+.navbar{
+    padding: 10px;
+}
+.navbar-nav .nav-item:not(:last-child){
+    transform: translateY(6px);
+}
+
