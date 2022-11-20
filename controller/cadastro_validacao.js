@@ -1,15 +1,21 @@
-// Impedir que números sejam digitados nos campos de nome e sobrenome
+// Impedir que números e caracteres sejam digitados nos campos de nome e sobrenome
 const inputNome = document.querySelector('#inputNome');
-inputNome.addEventListener('keypress', function (event) {
-    let keyCode = (event.keyCode ? event.keyCode : event.wich);
-    if (keyCode > 47 && keyCode < 58) {
-        event.preventDefault();
-    }
-});
 const inputSobrenome = document.querySelector('#inputSobrenome');
+
+function checkChar(e){
+    const char = String.fromCharCode(e.keyCode);
+    const pattern = `[a-zA-Z ]`;
+    if(char.match(pattern)){
+        return true;
+    }
+}
+inputNome.addEventListener('keypress', function (event){
+    if(!checkChar(event)){
+        event.preventDefault();
+    }   
+});
 inputSobrenome.addEventListener('keypress', function (event) {
-    let keyCode = (event.keyCode ? event.keyCode : event.wich);
-    if (keyCode > 47 && keyCode < 58) {
+    if (!checkChar(event)){
         event.preventDefault();
     }
 });
@@ -75,7 +81,7 @@ $(document).ready(function () {
                     icon: "success",
                     button: false,
                 });
-                setTimeout(function () { window.location = 'login.html' }, 4100);
+                setTimeout(function () { window.location = 'login.html' }, 3100);
             }
         })
 })

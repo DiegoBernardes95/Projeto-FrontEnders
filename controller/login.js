@@ -12,8 +12,7 @@ btnLogin.addEventListener('click', function (event) {
             icon: "success",
             button: false,
         });
-        btnHeader.innerHTML = `${localStorage.nome}`;
-        setTimeout(function () { window.location = '../../index.html' }, 4100);
+        setTimeout(function () { window.location = '../../index.html' }, 3100);
     } else {
         Swal.fire({
             icon: 'error',

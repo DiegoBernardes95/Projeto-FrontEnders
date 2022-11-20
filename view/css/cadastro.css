@@ -7,11 +7,14 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 95vh;
+    height: 100vh;
 }
 .cadastroInfo{
     color: #fff; 
     text-shadow: 1px 1px #000;
+}
+.btnFormModal, .cadastroInfo{
+    transform: translateY(-50px);
 }
 .cadastroInfo p{
     margin-left: 15px;

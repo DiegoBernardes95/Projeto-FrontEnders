@@ -17,5 +17,17 @@ function infoCep() {
         cidade.value = obj.localidade;
         bairro.value = obj.bairro;
         endereço.value = `${obj.logradouro}, ${obj.complemento}`;
+        if(estado.value == 'undefined' || cidade.value == 'undefined' || bairro.value == 'undefined' || endereço.value == 'undefined'){
+            estado.value = 'CEP inválido! Digite novamente.';
+            cidade.value = 'CEP inválido! Digite novamente.';
+            bairro.value = 'CEP inválido! Digite novamente.';
+            endereço.value = 'CEP inválido! Digite novamente.';
+        }
     }
 }
+
+estado.addEventListener('keypress', function(event){
+    if (!checkChar(event)){
+        event.preventDefault();
+    }
+})
