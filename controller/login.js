@@ -1,3 +1,4 @@
+// Código da página de login
 const btnHeader = document.getElementById('btnHeader');
 const emailLogin = document.getElementById('emailLogin');
 const senhaLogin = document.getElementById('senhaLogin');
@@ -17,7 +18,7 @@ btnLogin.addEventListener('click', function (event) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Usuário ou senha inválidos! Tente novamente.',
+            html: '<p>Usuário ou senha inválidos! Tente novamente.<br>Se não possui uma conta, cadastre-se!</p>',
           })
     }
 })

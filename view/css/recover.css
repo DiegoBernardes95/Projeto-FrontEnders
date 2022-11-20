@@ -1,0 +1,40 @@
+form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.formRecover{
+    width: 35%;
+    height: 45vh;
+    margin-top: 40px;
+    border: 5px solid #fff;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+}
+.field{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+.field a{
+    text-decoration: none;
+}
+.error{
+    color: red;
+}
+@media(max-width: 1300px){
+    .formRecover{
+        width: 45%;
+    }
+} 
+@media(max-width: 1000px){
+    .formRecover{
+        width: 65%;
+    }
+}
+@media(max-width: 700px){
+    .formRecover{
+        width: 90%;
+    }
+}
