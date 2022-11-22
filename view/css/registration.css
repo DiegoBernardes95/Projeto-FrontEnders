@@ -1,20 +1,18 @@
-body{
-    overflow-y: hidden;
-}
 .bannerCadastro{
-    background: url(../imagens/registro.jpg) rgba(0, 0, 0, 0.5);
+    background: url(../imagens/registro.jpg) rgba(0, 0, 0, 0.712);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 90vh;
 }
 .cadastroInfo{
     color: #fff; 
     text-shadow: 1px 1px #000;
 }
 .btnFormModal, .cadastroInfo{
-    transform: translateY(-50px);
+    transform: translateY(-30px);
 }
 .cadastroInfo p{
     margin-left: 15px;
