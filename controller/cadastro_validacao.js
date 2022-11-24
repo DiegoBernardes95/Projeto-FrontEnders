@@ -68,7 +68,13 @@ $(document).ready(function () {
                 confirmarSenha: {
                     required: true,
                     equalTo: '#inputPassword4',
-                }
+                },
+                rg: {
+                    required: true,
+                },
+                telefone: {
+                    required: true,
+                },
             },
             submitHandler: function (form) {
                 localStorage.nome = inputNome.value;

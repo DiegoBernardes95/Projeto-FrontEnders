@@ -21,8 +21,6 @@
     box-sizing: border-box;
 }
 
-
-
 .item1{
     grid-area: i1;
     background-color: rgb(56, 147, 228);
@@ -111,10 +109,11 @@
     border: none;
     border-radius: 20px;
 }
+
 /* Footer */
 footer{
     grid-area: footer;
-    height: 700px;
+    /* height: 700px; */
     background: #212529;
 }
 .logoFooter img{
