@@ -20,10 +20,10 @@ form{
     margin-left: 50px;
     margin-right: 50px;
 }
-.modal-body img{
-    width: 60px;
-    height: 60px;
-} 
+.error{
+    color: red;
+    margin-top: 5px;
+}
 @media(max-width: 1300px){
     .formBox{
         width: 45%;

@@ -1,9 +1,19 @@
-.navbar{
-    padding: 10px;
+/* Header */
+.navbar-nav{
+    padding: 5px;
 }
 .navbar-nav .nav-item:not(:last-child){
     transform: translateY(6px);
 }
+.navLogo{
+    width: 190px;
+    height: 80px;
+    transform: translateY(-55px)
+}
+.navLogo img{
+    width: 100%;
+}
+/* Fim do header */
 
 *{
     margin: 0;
@@ -104,3 +114,37 @@
     border: none;
     border-radius: 20px;
 }
+/* Footer */
+footer{
+    background: #212529;
+}
+.logoFooter img{
+    width: 250px;
+    height: 250px;
+}
+.redesSociais img{
+    width: 40px;
+    height: 40px;
+}
+.redesSociais img:hover{
+    padding: 4px;
+}
+.redesSociais a{
+    margin: 5px;
+}
+.paragraphFooter{
+    background: black;
+    color: #fff;
+}
+@media(max-width: 900px){
+    footer, footer ul{
+        flex-direction: column;
+    }
+    .logoFooter img{
+        margin-bottom: 40px;
+    }
+    .redesSociais{
+        margin-top: 50px;
+    }
+}
+/* Fim do footer */
