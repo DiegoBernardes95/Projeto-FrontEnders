@@ -45,10 +45,7 @@
     background-color: rgb(218, 122, 119);
 }
 
-.footer{
-    grid-area: footer;
-    background-color: antiquewhite;
-}
+
 .container2{
 
     width: 100vw;
@@ -116,6 +113,8 @@
 }
 /* Footer */
 footer{
+    grid-area: footer;
+    height: 700px;
     background: #212529;
 }
 .logoFooter img{
