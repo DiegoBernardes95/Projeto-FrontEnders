@@ -15,7 +15,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">FrontEnders</a>
+            <div class="navLogo">
+                <a href="../../index.html"><img src="../imagens/logo_header.svg" alt=""></a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span>
@@ -61,7 +63,7 @@
     <div class="modal fade modalFull" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content modalFullToo">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Dados</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -94,15 +96,19 @@
                                             id="inputConfirmPassword" placeholder="Confirmação de Senha">
                                     </div>
                                 </div>
-                                <div class="d-flex w-100 gap-2">
-                                    <input type="" class="form-control" id="RG" placeholder="Nº de RG">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Telefone">
+                                <div class="d-flex gap-2">
+                                    <div class="w-50">
+                                        <input type="" class="form-control" name="rg" id="RG" placeholder="Nº de RG">
+                                    </div>
+                                    <div class="w-50">
+                                        <input type="tel" class="form-control" id="phone" name="telefone" placeholder="Telefone">
+                                    </div>
                                 </div>
                             </div>
                             <div class="formDados">
-                                <div class="formCep w-100 d-flex gap-2">
+                                <div class="formCep d-flex gap-2">
                                     <div class="d-flex flex-column w-50">
-                                        <input type="" class="form-control" id="inputCEP" placeholder="CEP"
+                                        <input type="" class="form-control" id="inputCEP" name="cep" placeholder="CEP"
                                             maxlength="8">
                                     </div>
                                     <input type="text" id="inputEstado" class="form-control w-50" placeholder="Estado">
@@ -129,9 +135,9 @@
         </div>
     </div>
 
-    <footer class="d-flex justify-content-around align-items-center py-5">
+    <footer class="d-flex justify-content-around align-items-center py-4">
         <div class="logoFooter">
-            <img src="../imagens/1.svg" alt="Logo">
+            <a href="../../index.html"><img src="../imagens/logo.svg" alt="Logo"></a>
         </div>
     
         <div class="d-flex gap-5">
@@ -143,13 +149,14 @@
               <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">Login</a></li>
             </ul>
             <ul class="nav ms-2 flex-column">
-              <li class="nav-item"><a href="#" class="nav-link px-2  fs-3">Suporte</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 fs-3">Suporte</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Perguntas frequentes</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contato</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Chat online</a></li>
             </ul>
         </div>
+
         <div class="redesSociais">
             <div>
                 <h4 class="lead text-primary nav-link fs-4 mb-3 text-center">Redes</h4>
