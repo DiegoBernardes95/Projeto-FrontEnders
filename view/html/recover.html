@@ -15,9 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="navLogo">
-                <a href="../../index.html"><img src="../imagens/logo_header.svg" alt=""></a>
-            </div>
+            <a class="navbar-brand" href="#">FrontEnders</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span>
@@ -44,30 +42,25 @@
         </div>
     </nav>
 
-    <main>
-        <div class="titleRecover">
-            <h1 class="text-center">Recuperação de Senha</h1>
-            <p class="text-center lead fs-6">Digite seu email cadastrado e um link será enviado em seguida.<br>Logo após, você será redirecionado para a página de login.</p>
-        </div>
-        <form>
-            <div class="formRecover">
-                <div class="field">
-                    <input type="email" class="form-control mb-1 py-3" id="emailRecover" name="email" placeholder="Digite o email cadastrado">
-                </div>
-                <div class="field d-flex flex-column mt-4">
-                    <p class="lead fs-6 m-0">Não possui uma conta? <a href="registration.html">Faça seu cadastro!</a></p>
-                    <p class="lead fs-6">Se já possui, faça o <a href="login.html">login!</a></p>
-                </div>
-                <div class="field">
-                    <button type="submit" class="btn btn-primary mt-2  mb-3" id="btnRecover">Enviar</button>
-                </div>
+    <form>
+        <div class="formRecover">
+            <h1 class="text-center fs-3 mt-4">Recuperação de Senha</h1>
+            <div class="field">
+                <input type="email" class="form-control mt-5 mb-1 text-center" id="emailRecover" name="email" placeholder="Digite o email cadastrado">
             </div>
-        </form>
-    </main>
+            <div class="field d-flex flex-column mt-4">
+                <p class="lead fs-6 m-0">Não possui uma conta? <a href="registration.html">Faça seu cadastro!</a></p>
+                <p class="lead fs-6">Se já possui, faça o <a href="login.html">login!</a></p>
+            </div>
+            <div class="field">
+                <button type="submit" class="btn btn-primary mt-2 w-25" id="btnRecover">Enviar</button>
+            </div>
+        </div>
+    </form>
 
-    <footer class="d-flex justify-content-around align-items-center py-4">
+    <footer class="d-flex justify-content-around align-items-center py-5">
         <div class="logoFooter">
-            <a href="../../index.html"><img src="../imagens/logo.svg" alt="Logo"></a>
+            <img src="../imagens/1.svg" alt="Logo">
         </div>
     
         <div class="d-flex gap-5">
@@ -86,7 +79,6 @@
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Chat online</a></li>
             </ul>
         </div>
-        
         <div class="redesSociais">
             <div>
                 <h4 class="lead text-primary nav-link fs-4 mb-3 text-center">Redes</h4>
