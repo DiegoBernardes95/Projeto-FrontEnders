@@ -16,12 +16,12 @@ $(document).ready(function(){
                     text: 'Email de recuperação de senha enviado!',
                     icon: 'success',
                 });
-                setTimeout(function(){ window.location = 'login.html' }, 1400);
+                setTimeout(function(){ window.location = 'recover.html' }, 1400);
             } else{
                 Swal.fire({
                     icon: 'error',
                     text: 'Email incorreto!',
-                }) 
+                })
             }
         }
     })
