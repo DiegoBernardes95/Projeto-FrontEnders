@@ -41,6 +41,7 @@
 .item4{
     grid-area: i4;
     background-color: rgb(218, 122, 119);
+    height: 850px;
 }
 
 
@@ -97,7 +98,7 @@
     font-size: 20px;
     color: white; 
     text-align: center;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 .btnRegistrar{
     background-color: brown;
